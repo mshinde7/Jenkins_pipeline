@@ -9,9 +9,7 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        sh '''echo PATH = ${PATH}
-echo M3_PATH = /Users/Mahesh/Applications/Maven/apache-maven-3.5.0/bin
-mvn clean'''
+        sh 'mvn clean'
       }
     }
     stage('Build') {
